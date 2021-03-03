@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:backgroundTint="@color/colorBackground"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="58dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteText"
+        app:layout_constraintVertical_bias="0.087"
+        app:srcCompat="@drawable/ic_note_add" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="46dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="65dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/AddLessonText"
+        app:srcCompat="@drawable/ic_book" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="46dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="57dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/mailText"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_mail_outline" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="46dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="57dp"
+        android:contentDescription="@string/todo"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/mailText"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <TextView
+        android:id="@+id/calendarText"
+        style="@style/TextAppearance.MediaRouter.Dynamic.Body.Light"
+        android:layout_width="97dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="297dp"
+        android:layout_marginBottom="389dp"
+        android:text="@string/calendar"
+        android:textColor="@color/colorLetters"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noteText"
+        android:layout_width="92dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/add_note"
+        android:textColor="@color/colorLetters"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AddLessonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/add_lesson"
+        android:textColor="@color/colorLetters"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/noteText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/mailText"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/mail"
+        android:textColor="@color/colorLetters"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toEndOf="@+id/AddLessonText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="381dp"
+        android:layout_height="372dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#CEFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mailText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

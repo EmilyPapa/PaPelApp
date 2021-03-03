@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/register_toolbar"></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".RegisterActivity"
+            tools:layout_editor_absoluteY="81dp">
+
+            <Button
+                android:id="@+id/reg_create_btn"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="353dp"
+                android:layout_marginEnd="197dp"
+                android:backgroundTint="@color/colorLetters"
+                android:text="@string/create_account"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/reg_display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="164dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/colorLetters"
+                android:ems="10"
+                android:foregroundTint="#00FFFFFF"
+                android:hint="@string/enter_your_user_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLetters"
+                android:textColorHint="@color/colorLetters"
+                app:layout_constraintBottom_toTopOf="@+id/reg_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.775" />
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="165dp"
+                android:backgroundTint="@color/colorLetters"
+                android:ems="10"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorLetters"
+                android:textColorHint="@color/colorLetters"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorLetters"
+                android:ems="10"
+                android:hint="@string/enter_your_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorLetters"
+                android:textColorHint="@color/colorLetters"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.335" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

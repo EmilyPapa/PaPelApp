@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "258886283233",
+    "firebase_url": "https://android-app-f9892.firebaseio.com",
+    "project_id": "android-app-f9892",
+    "storage_bucket": "android-app-f9892.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258886283233:android:f01ce33b5adfb0d6812ca0",
+        "android_client_info": {
+          "package_name": "com.example.examslab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258886283233-9t52i9g0mvr7vivi269788u1dve61m05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.examslab",
+            "certificate_hash": "08df8d103d6765aa25b268e102cc2dd56964a9c6"
+          }
+        },
+        {
+          "client_id": "258886283233-rgj7shq68p3r9lip77kht0ko4mj4aerl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.examslab",
+            "certificate_hash": "48c4d0b3ec057024092fe3ca6b58841c0e9deb1d"
+          }
+        },
+        {
+          "client_id": "258886283233-t4aqqqq0h8kilhnaa71t1aj35p1jlg5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzVDVufBkgZCrMdluIji_F01kIFaV8gUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258886283233-t4aqqqq0h8kilhnaa71t1aj35p1jlg5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258886283233:android:03f5fc88f2680036812ca0",
+        "android_client_info": {
+          "package_name": "com.example.labexams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258886283233-d3ll8723q0uqvr04m4c2r8hb6j0tbn5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.labexams",
+            "certificate_hash": "48c4d0b3ec057024092fe3ca6b58841c0e9deb1d"
+          }
+        },
+        {
+          "client_id": "258886283233-t4aqqqq0h8kilhnaa71t1aj35p1jlg5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzVDVufBkgZCrMdluIji_F01kIFaV8gUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258886283233-t4aqqqq0h8kilhnaa71t1aj35p1jlg5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
